@@ -1,29 +1,16 @@
-This is a template to help back up dotfiles to a github repo. Fork, judiciously copy dotfiles into the repo and push.
+# Commit Your Dotfiles
 
-1. Fork
-2. checkout
-3. judiciously copy dotfiles to the repo
-4. commit
-5. push
+This is a template to help back up dotfiles to a github repo. Fork, judiciously copy dotfiles into the project, commit, and push.
 
+## Why I made this
 
-# Mathias’s dotfiles
+I came across https://github.com/mathiasbynens/dotfiles and said "damn, that looks great!" so i installed it and immediately lost control of my computer. I vowed to never bulk install dotfiles again. 
 
-## Installation
+I started cobbling together my own dotfiles, adding cool features to my development environment. Life is good... until I use another machine. I needed a way to keep my dotfiles in sync across multiple machines. After some poking around I realized that https://github.com/mathiasbynens/dotfiles had what i needed if i removed all the dotfiles and added my own. 
 
-### Using Git and the bootstrap script
+Add your own dotfiles as you would with files for any other git project.
 
-You can clone the repository wherever you want. (I like to keep it in `~/Projects/dotfiles`, with `~/dotfiles` as a symlink.) The bootstrapper script will pull in the latest version and copy the files to your home folder.
-
-```bash
-git clone https://github.com/mathiasbynens/dotfiles.git && cd dotfiles && source bootstrap.sh
-```
-
-To update, `cd` into your local `dotfiles` repository and then:
-
-```bash
-source bootstrap.sh
-```
+Install your dotfiles by cd'ing to your dotfiles directory and then 'source bootstrap.sh' - this will copy the dotfiles from the project and into your home directory.
 
 Alternatively, to update while avoiding the confirmation prompt:
 
