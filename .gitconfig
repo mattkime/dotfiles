@@ -1,0 +1,18 @@
+[push]
+	default = current
+[user]
+	name = Matt Kime
+	email = matt@mattki.me
+[merge]
+	tool = vimdiff
+[diff]
+[pager]
+    diff =
+[core]
+	editor = vi
+[alias]
+	d = difftool
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = false
