@@ -1,1 +1,8 @@
 alias hgrep="fc -El 0 | grep"
+
+# Easier navigation: .., ..., ...., ....., and -
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+alias -- -="cd -"
