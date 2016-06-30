@@ -8,7 +8,6 @@ function cdf() { # short for `cdfinder`
 	cd "$(osascript -e 'tell app "Finder" to POSIX path of (insertion location as alias)')";
 }
 
-
 # Determine size of a file or total size of a directory
 function fs() {
 	if du -b /dev/null > /dev/null 2>&1; then
@@ -22,3 +21,8 @@ function fs() {
 		du $arg .[^.]* ./*;
 	fi;
 }
+
+# Docker aliases and functions
+drm() { docker rm $(docker ps -q -a); }
+dri() { docker rmi $(docker images -q); }
+dps() { docker ps -a; }
